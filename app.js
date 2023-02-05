@@ -34,7 +34,7 @@ app.post("/",function(req,res){
     const url = "https://us13.api.mailchimp.com/3.0/lists/5ab3f35274"
     const options={
         method:"post",
-        auth:"user:6e739af02e9442482f6e5c327bcd68bc-us13"
+        auth:"user:0a9f951208104d093248055b11e53e0e-us13"
     }
 
     const request = https.request(url,options,function(response){        
@@ -58,11 +58,11 @@ app.post("/",function(req,res){
 
 });
 
-app.listen(process.env.PORT || 3000,function(){
+app.listen(3000,function(){
     console.log("Server working on 3000");
 });
 
 
-//6e739af02e9442482f6e5c327bcd68bc - us13
+//0a9f951208104d093248055b11e53e0e-us13
 
 //5ab3f35274
